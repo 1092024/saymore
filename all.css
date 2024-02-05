@@ -281,7 +281,7 @@ footer img{
     position: absolute;
     top: 50%;
     z-index: 99;
-    left: 44.9%;
+    left: 48%;
     padding: 10px;
     animation: neonGlow 1s infinite alternate;
 }
@@ -305,7 +305,7 @@ footer img{
     display: none;
     top: 75%;
     z-index: 4;
-    left: 44.4%;
+    left: 46.5%;
     font-size: 25px;
 }
 #startBtn{
@@ -386,10 +386,6 @@ video{
     z-index: 10;
 }
 
-/* #videoPlay{
-    opacity: 0;
-} */
-
 .overlay {
     position: absolute;
     top: 0;
@@ -429,7 +425,7 @@ video{
 }
 
 .loading-message {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

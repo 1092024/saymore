@@ -16,6 +16,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://pulipulichen.github.io/jieba-js/require-jieba-js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="js/word_arr.js"></script>
+    <script src="js/analyze.js"></script>
 </head>
 <body>
     <!-- <div class="navbar01">
@@ -63,11 +70,14 @@
     <div class="expMain">
       <!-- 開始體驗 -->
       <a class="goBack" href="./index.html">HOME</a>
-      <p class="clickTextDoor" id="clickDoor">點擊開始進行體驗</p>
+      <p class="clickTextDoor" id="clickDoor">Start</p>
+      <!-- <p class="clickTextDoor" id="clickDoor">點擊開始進行體驗</p> -->
       <div class="recordBtn">
-        <p id="startBtn">點擊開始錄音</p>
+        <p id="startBtn" onclick="start()">Record</p>
+        <!-- <p id="startBtn" onclick="start()">點擊開始錄音</p> -->
         <img id="recordGIF" src="./img/record.gif" alt="">
-        <p id="endBtn">點擊結束錄音</p>
+        <p id="endBtn" onclick="end()">End</p>
+        <!-- <p id="endBtn" onclick="end()">點擊結束錄音</p> -->
       </div>
 
       <!-- 展間內部＋滑門 -->
@@ -81,21 +91,22 @@
       </div>
 
       <div id="loadingMessage" class="loading-message">
+        Analyze...
         <!-- 分析中... -->
       </div>
-      <!-- <img id="loadingBG" src="./img/loadingBG.png" alt=""> -->
 
       <!-- 播放影片 -->
-      <video autoplay muted playsinline id="videoPlay">
-          <source src="./video/sad.mp4" type="video/mp4">
+      <video autoplay muted playsinline id="videoPlay" src="" type="video/mp4">
           Your browser does not support the video tag.
       </video>
 
       <!--  影片播完的遮罩和按鈕 -->
       <div class="overlay" id="overlay"></div>
       <div class="overlay-buttons" id="overlayButtons">
-          <button onclick="restartVideo()">再次體驗</button>
-          <button onclick="openAnotherPage()">前往首頁</button>
+          <button onclick="restartVideo()">Again</button>
+          <!-- <button onclick="restartVideo()">再次體驗</button> -->
+          <button onclick="openAnotherPage()">HomePage</button>
+          <!-- <button onclick="openAnotherPage()">前往首頁</button> -->
       </div>
     </div>
 

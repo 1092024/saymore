@@ -71,12 +71,11 @@ $("#endBtn").on("click", function(){
 
     // 在淡出动画完成后，将 display 设置为 'none'
     window.setTimeout(function() {
-        $("#loadingTxt").css({
+        $("#loadingMessage").css({
             'display': 'none'
         });
         $("#videoPlay").css({
-          'display': 'block',
-          'transition': 'transform 5.0s ease-in-out' 
+          'display': 'block'
         });
     }, 1000); // 等待淡出动画时间
   }, 2000);
