@@ -1,0 +1,633 @@
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+@media (max-width: 767px) {
+    .navbar01{
+        height: 10vh;
+    }
+    #mobileNav{
+        overflow: visible;
+        height: 10vh;
+    }
+    #computerNav{
+        display: none;
+    }
+    
+    /* works */
+    .worksMain{
+        display: flex;
+        width: 80vw;
+        margin: auto;
+        height: 100vh;
+        border: 1px solid gray;
+        align-items: center; 
+    }
+    .worksleftMain{  
+        flex: left;
+        width: 50%;
+    }
+    .worksrightMain{
+        flex: right;
+        width: 50%;
+    }
+
+    /* ink */
+    .inkModel{
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        height: 100vh;
+    }
+    .inkModel img{
+        width: 60vw;
+        padding: 30px;
+    }
+    .inkMain{
+        display: flex;
+        width: 80vw;
+        margin: auto;
+        height: 100vh;
+        border: 1px solid gray;
+        align-items: center; 
+    }
+    .inkleftMain{  
+        flex: left;
+        width: 50%;
+    }
+    .inkrightMain{
+        flex: right;
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .compNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        width: 95vw;
+        padding: auto;
+        margin: auto;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .computerNavLogo a {
+        text-decoration: none;
+        color: #000; /* 設定連結顏色 */
+        font-size: 1.5em; /* 設定字體大小 */    
+    }
+    .computerNavLogo a:hover{
+        text-decoration: none;
+        color: #000;
+    }
+    .computerNavPage {
+        display: flex;
+        justify-content: flex-end;
+        width: 60%;
+    }
+    .computerNavPage a {
+        margin-left: 20px; /* 設定連結之間的間距 */
+        text-decoration: none;
+        color: #737373; /* 設定連結顏色 */
+    }
+    .computerNavPage a:hover{
+        text-decoration: none;
+    }
+
+    
+    #mobileNav{
+        display: none;
+    }
+    #computerNav{
+        overflow: visible;
+    }
+
+    /* works */
+    /* .worksMain{
+        display: flex;
+        width: 80vw;
+        margin: auto;
+        height: 100vh;
+        border: 1px solid gray;
+        align-items: center; 
+    }
+    .worksleftMain{  
+        flex: left;
+        width: 50%;
+    }
+    .worksrightMain{
+        flex: right;
+        width: 50%;
+    } */
+
+    /* ink */
+    /* .inkModel{
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        height: 100vh;
+    }
+    .inkModel img{
+        width: 20vw;
+        padding: 30px;
+    }
+    .inkMain{
+        display: flex;
+        width: 80vw;
+        margin: auto;
+        height: 100vh;
+        border: 1px solid gray;
+        align-items: center; 
+    }
+    .inkleftMain{  
+        flex: left;
+        width: 50%;
+    }
+    .inkrightMain{
+        flex: right;
+        width: 50%;
+    } */
+    
+    
+}
+
+.navbar01{
+    height: 10vh;
+}
+.main01{
+    height: 90vh;
+    background-color: rgb(190, 190, 190);
+}
+.info{
+    padding-top: 40px;
+    height: 100vh;
+    /* background-color: rgb(255, 231, 231); */
+    width: 80vw;
+    margin: auto;
+    line-height: 0.6in;
+}
+/* .process{
+    height: 100vh;
+    background-color: rgb(231, 239, 255);
+    width: 80vw;
+    margin: auto;
+} */
+.member{
+    padding-top: 40px;
+    height: 100vh;
+    /* background-color: rgb(215, 255, 220); */
+    width: 80vw;
+    margin: auto;
+}
+.member img{
+    padding-top: 40px;
+    width: 60vw;
+    margin: auto;
+    display: block;
+}
+.member p{
+    padding-top: 10px;
+    width: 60vw;
+    margin: auto;
+    display: block;
+}
+footer{
+    height: 8vh;
+    /* background-color: rgb(215, 255, 220); */
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+}
+footer img{
+    display: inline-block;
+    width: 30px;
+    margin: 15px;
+}
+
+
+/* experience */
+.expMain{
+    /* margin: auto; */
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url('./img/bg.gif'); */
+    background-image: linear-gradient(45deg, #808080 0%, #1d1d1d 100%);
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    font-family: 'Noto Serif TC', serif;
+}
+.container {
+    height:100vh;
+    width:100vw;
+    position: relative;
+    overflow: hidden;
+    /* background-image: radial-gradient(rgba(0,0,0,.95),rgba(0,0,0,.85),rgba(0,0,0,.7)), url(https://svgsilh.com/svg/1301778.svg); */
+    z-index: 2;
+    /* background-color: #5a5a5a; */
+    /* text-align: center; */
+}
+.doorImg{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 6.0s ease;
+}
+.dropImg{
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    height: 38vh;
+    opacity: 0;
+    transition: opacity 6.0s ease;
+}
+.dropImg:hover{
+    cursor: pointer;
+}
+
+.door-left, .door-right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0%;
+    transition: all ease 2.0s;
+    -moz-transition: all ease 2.0s;
+    -webkit-transition: all ease 2.0s;
+    -o-transition: all ease 2.0s;
+    -ms-transition: all ease 2.0;
+}
+.door-left {
+    left: 0%;
+    background-color: rgb(144, 144, 144);
+}
+.door-right {
+    left: 50%;
+    background-color: rgb(166, 166, 166);
+}
+.door-left.click{
+    left: -50%;
+
+}
+.door-right.click{
+    left: 100%;
+}
+.clickTextDoor{
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    left: 44.9%;
+    padding: 10px;
+    animation: neonGlow 1s infinite alternate;
+}
+.clickTextDoor:hover{
+    cursor: pointer;
+}
+.goBack{
+    position: absolute;
+    z-index: 98;
+    top: 1%;
+    left: 1%;
+    color: #9c9b9b;
+    text-decoration: none;
+}
+.goBack:hover{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.recordBtn{
+    position: absolute;
+    display: none;
+    top: 75%;
+    z-index: 4;
+    left: 44.4%;
+    font-size: 25px;
+}
+#startBtn{
+    color: #9c9b9b;
+    text-decoration: dashed;
+    font-size: 20px;
+    padding: 20px 10px 20px 10px;
+    animation: recordText 1s infinite alternate;
+}
+#startBtn:hover{
+    background-image: linear-gradient(to right, #d7d2cc 0%, #808c96 100%);
+    color: aliceblue;
+    border-radius: 50%;
+    animation: none;
+    cursor: pointer;
+}
+#recordGIF{
+    height: 15vh;
+    display: none;
+    position: absolute;
+    bottom: 80%;
+    left: 6%;
+}
+#endBtn{
+    color: #9c9b9b;
+    text-decoration: dashed;
+    font-size: 20px;
+    padding: 20px 10px 20px 10px;
+    animation: recordText 1s infinite alternate;
+    display: none;
+}
+#endBtn:hover{
+    background-image: linear-gradient(to right, #d7d2cc 0%, #808c96 100%);
+    color: aliceblue;
+    border-radius: 50%;
+    animation: none;
+    cursor: pointer;
+}
+@keyframes neonGlow {
+    0% {
+      text-shadow: 0 0 10px #5a5a5a;
+      color: rgba(230, 230, 230, 0.4);
+    }
+    100% {
+      text-shadow: 0 0 20px #5a5a5a, 0 0 30px #5a5a5a, 0 0 40px #5a5a5a;
+      color: rgb(230, 230, 230, 0.8);
+    }
+  }
+  @keyframes recordText {
+    0% {
+      text-shadow: 0 0 20px #cdcccc;
+      color: rgba(251, 251, 251, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 25px #a7a7a7, 0 0 30px #717171, 0 0 40px #737373;
+      color: rgba(251, 251, 251, 0.8);
+    }
+  }
+  @keyframes videoText {
+    0% {
+      text-shadow: 0 0 20px #303030;
+      color: rgb(118, 116, 116);
+    }
+    100% {
+      text-shadow: 0 0 10px #4e4d4d, 0 0 20px #272727, 0 0 30px #101010;
+      color: rgba(234, 234, 234, 0.8);
+    }
+  }
+
+video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* 調整影片寬度，這裡是佔據畫面寬度的 80% */
+    height: auto; /* 讓高度按比例自動調整 */
+    display: none;
+    z-index: 10;
+}
+
+/* #videoPlay{
+    opacity: 0;
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* 初始完全透明 */
+    z-index: 12; /* 將遮罩堆疊在影片上方 */
+    display: none; /* 初始隱藏 */
+    transition: background 1s ease; /* 背景淡入效果，1秒的動畫時間 */
+}
+
+.overlay-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 13; /* 將按鈕堆疊在遮罩上方 */
+    text-align: center;
+    display: none; /* 初始隱藏 */
+    transition: opacity 1s ease; /* 按鈕淡入效果，1秒的動畫時間 */
+}
+
+.overlay-buttons button {
+    padding: 10px 30px;
+    margin: 40px;
+    font-size: 24px;
+    /* background-color: #fff; */
+    border: none;
+    cursor: pointer;
+
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fff;
+    animation: videoText 1s infinite alternate;
+}
+
+.loading-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    display: none; /* 初始隐藏 */
+    transition: opacity 0.5s ease; /* 添加淡入淡出效果，0.5秒的动画时间 */
+}
+
+/* contents */
+.conMain{
+    height: 90vh;
+    background-color: rgb(220, 220, 220);
+    /* display: flex;
+    align-items: center;
+    margin: 0 auto; */
+    position: relative;
+    overflow: hidden;
+    font-family: 'Noto Serif TC', serif;
+}
+.conMain img{
+    margin: 0 auto;
+}
+#happy:hover{
+    cursor: pointer;
+}
+#angry:hover{
+    cursor: pointer;
+}
+#sad:hover{
+    cursor: pointer;
+}
+#fear:hover{
+    cursor: pointer;
+}  
+
+#happyClick, #angryClick, #sadClick, #fearClick{
+    display: none;
+    position: relative;
+}
+.back{
+    width: 2vw;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+.back:hover{
+    cursor: pointer;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes rightIn {
+    from {
+        transform: translate3d(50%, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+#happyDrop{
+    width: 20vw;
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    animation: fade 2s linear 0s;
+}
+#happyClick span{
+    position: absolute;
+    top: 27%;
+    right: 50%;
+    font-size: 23px;
+    animation: rightIn 1.5s linear 0s;
+}
+#happyClick span p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#angryDrop{
+    width: 20vw;
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    animation: fade 2s linear 0s;
+}
+#angryClick span{
+    position: absolute;
+    top: 27%;
+    right: 50%;
+    font-size: 23px;
+    animation: rightIn 1.5s linear 0s;
+}
+#angryClick span p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#sadDrop{
+    width: 20vw;
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    animation: fade 2s linear 0s;
+}
+#sadClick span{
+    position: absolute;
+    top: 27%;
+    right: 50%;
+    font-size: 23px;
+    animation: rightIn 1.5s linear 0s;
+}
+#sadClick span p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#fearDrop{
+    width: 20vw;
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    animation: fade 2s linear 0s;
+}
+#fearClick span{
+    position: absolute;
+    top: 27%;
+    right: 50%;
+    font-size: 23px;
+    animation: rightIn 1.5s linear 0s;
+}
+#fearClick span p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* 墨球 */  
+.circle-1{
+    width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	transform: translate(44%,42%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	/* animation: planet-3 10s cubic-bezier(0.03, 0, 1, 0.99) infinite; */
+	position: absolute;
+	/* z-index: 1; */
+	top: 22%;
+	left: 40%;
+}
+.circle-2{
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	transform: translate(44%,42%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	/* animation: planet-2 8s cubic-bezier(0.03, 0, 1, 0.99) infinite; */
+	position: absolute;
+	right: 21%;
+	/* z-index: 1; */
+	top: 46%;
+}
+.circle-3{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transform: translate(44%,42%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	position: absolute;
+	top: 56%;
+	left: 17%;
+	/* z-index: 1; */
+}
+.circle-4{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	transform: translate(44%,42%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	position: absolute;
+	top: 71%;
+	left: 50%;
+	/* z-index: 1; */
+}  
+  /* 軌跡 */
+  /* .orbit-1{
+	width: 61%;
+	height: 45%;
+	border-radius: 50%;
+	border: 2px solid gray;
+	position: absolute;
+	left: 18%;
+	top: 32%;
+  } */
+
