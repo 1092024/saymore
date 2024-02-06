@@ -100,7 +100,7 @@
         width: 100vw;
     }
     #introduction{
-        height: 100vh;
+        height: 100%;
         margin: auto;
         width: 80vw;
         padding: 20px;
