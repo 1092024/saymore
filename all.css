@@ -256,6 +256,13 @@
     margin: auto;
     display: block;
 } */
+#index_introduction{
+    font-size: 20px;
+    line-height: 80px;
+    letter-spacing: 1.2px;
+    color: #75706f;
+}
+
 footer{
     height: 8vh;
     width: 80vw;
@@ -502,7 +509,7 @@ video{
 /* contents */
 .conMain{
     height: 90vh;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(250, 249, 244);
     /* display: flex;
     align-items: center;
     margin: 0 auto; */
@@ -633,52 +640,43 @@ video{
 }
 
 /* 墨球 */  
-.circle-1{
-    width: 90px;
-	height: 90px;
-	border-radius: 50%;
-	transform: translate(44%,42%);
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	/* animation: planet-3 10s cubic-bezier(0.03, 0, 1, 0.99) infinite; */
-	position: absolute;
-	/* z-index: 1; */
-	top: 22%;
-	left: 40%;
+@keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
 }
-.circle-2{
-	width: 78px;
-	height: 78px;
-	border-radius: 50%;
-	transform: translate(44%,42%);
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	/* animation: planet-2 8s cubic-bezier(0.03, 0, 1, 0.99) infinite; */
-	position: absolute;
-	right: 21%;
-	/* z-index: 1; */
-	top: 46%;
+#happy{
+    width: 18%;
+    position: absolute;
+    top: 10%;
+	left: 37%;
+    animation: flash 1s infinite alternate;
 }
-.circle-3{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	transform: translate(44%,42%);
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	position: absolute;
-	top: 56%;
-	left: 17%;
-	/* z-index: 1; */
+#angry{
+    width: 18%;
+    position: absolute;
+    top: 40%;
+	left: 15%;
+    animation: flash 1.5s infinite alternate;
 }
-.circle-4{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	transform: translate(44%,42%);
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	position: absolute;
-	top: 71%;
-	left: 50%;
-	/* z-index: 1; */
-}  
+#sad{
+    width: 18%;
+    position: absolute;
+    top: 36%;
+	left: 74%;
+    animation: flash 0.8s infinite alternate;
+}
+#fear{
+    width: 18%;
+    position: absolute;
+    top: 58%;
+	left: 49%;
+    animation: flash 1.3s infinite alternate;
+}
+
   /* 軌跡 */
   /* .orbit-1{
 	width: 61%;
