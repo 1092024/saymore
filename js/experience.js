@@ -22,7 +22,6 @@ $("#clickDrop").on("click", function(){
     'transform': 'scale(4)',
     'transition': 'transform 2.0s ease-in-out'  // 添加淡入淡出效果，0.5秒的動畫時間
   });
-  
   $("#clickDrop").on("transitionend", function() {
     // 在這裡顯示按鈕
     $(".recordBtn").css({
@@ -32,11 +31,6 @@ $("#clickDrop").on("click", function(){
     $("#clickDrop").off("transitionend");
   });
 });
-
-function inkDropChange() {
-  contentPhone.style.backgroundImage = 
-  url('./img/ink_drop');
-}
 
 //錄音
 $("#startBtn").on("click", function(){
