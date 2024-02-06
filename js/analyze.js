@@ -178,10 +178,28 @@ recognition.onend = function () {
 
 // 监听语音辨識结果
 recognition.onresult = (event) => {
-    result = event.results[event.results.length - 1][0].transcript;
+    console.log(event.results[0][0].transcript);
+    if(event.results[0][0].transcrip === ""){
+        console.log('no text')
+    }
+    else{
+        console.log('have text');
+        result = event.results[event.results.length - 1][0].transcript;
     console.log(result);
-    translateText(result);
+    }
+    // result = event.results[event.results.length - 1][0].transcript;
+    // console.log(result);
+    // if(result === ' '){
+    //     console.log('fail');
+    //     // alert('record fail')
+    //     window.location.reload();
+    // }
+    //translateText(result);
 };
+
+recognition.onnomatch = () => {
+    console.log('no text');
+}
 
 // 处理错误
 recognition.onerror = (event) => {

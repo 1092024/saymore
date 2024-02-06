@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>説墨</title>
+    <title>SayMore</title>
     <link rel="shortcut icon" href="./img/1705394341.ico" type="image/x-icon">
     <link rel="stylesheet" href="./all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;900&display=swap" rel="stylesheet">
   </head>
 <body>
-    <div class="navbar01">
+    <div class="container01">
+      <div class="navbar01">
         <!-- PC -->
         <nav class="compNav" id="computerNav">
             <div class="computerNavLogo">  
@@ -33,14 +34,16 @@
         </nav>
         <!-- mobile -->
         <nav class="navbar navbar-light bg-light fixed-top" id="mobileNav">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">説墨</a>
+            <div class="container-fluid text">
+              <!-- <a class="navbar-brand" href="./index.html">説墨</a> -->
+              <a class="navbar-brand" href="./index.html" style="font-size: 1.5rem;"><b>SayMore</b></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">說墨</h5>
+                  <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">說墨</h5> -->
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SayMore</h5>
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -58,55 +61,22 @@
               </div>
             </div>
           </nav>
+      </div>
+     
+        <div id="main" class="fade-in-element">
+            <img width="100%" height="100%" src="./img/bg.gif" alt="">
+        </div>
+        <div id="introduction" class="fade-in-element"><b>Introduction</b></div>
+        <div id="member" class="fade-in-element">
+            <!-- <img class="img" src="./img/member.png" alt=""> -->
+        </div>
+        <div id="footer" class="fade-in-element">
+            <img src="./img/ig.png" alt="">
+            <img src="./img/fb.png" alt="">
+            <img src="./img/yt.png" alt="">
+            <p> &copy; 2024 ㄨㄑㄇㄏ </p>
+        </div>
     </div>
-    
-
-    <div class="main01 fade-in-element">
-      <img width="100%" height="100%" src="./img/bg.gif" alt="">
-    </div>
-    
-    <div class="info fade-in-element">
-        <!-- <h5><b>作品簡介</b></h5> -->
-        <h5><b>Introduction</b></h5>
-        <div class="fade-in-element">
-          introduction <br>
-        </div>
-        <!-- <div class="fade-in-element">
-          說墨，說出來就好 <br>
-        </div>
-        <div class="fade-in-element">
-          說墨，說出來就好 <br>
-        </div>
-        <div class="fade-in-element">
-          說墨，說出來就好 <br>
-        </div>
-        <div class="fade-in-element">
-          說墨，說出來就好 <br>
-        </div>
-        <div class="fade-in-element">
-          說墨，說出來就好 <br>
-        </div> -->
-    </div>
-
-    <!-- <div class="process">
-        <h5>作品演變過程</h5>
-        
-    </div> -->
-
-    <!-- <div class="member fade-in-element">
-        <h5 class="fade-in-element"><b>成員介紹</b></h5>
-        <img class="fade-in-element" src="./img/member.jpg" alt="">
-        <p class="fade-in-element">我們是ㄨㄑㄇㄏ工作室</p>
-    </div> -->
-    
-    <footer class="fade-in-element">
-        <img src="./img/ig.png" alt="">
-        <img src="./img/fb.png" alt="">
-        <img src="./img/yt.png" alt="">
-        <p> &copy; 2024 ㄨㄑㄇㄏ </p>
-        <hr>
-    </footer>
-
     <script src="./js/index.js"></script>
 </body>
 </html>
