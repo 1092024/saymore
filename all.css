@@ -258,7 +258,7 @@
 } */
 #index_introduction{
     font-size: 20px;
-    line-height: 80px;
+    line-height: 50px;
     letter-spacing: 1.2px;
     color: #75706f;
 }
@@ -572,14 +572,19 @@ video{
 }
 #happyClick span{
     position: absolute;
-    top: 27%;
-    right: 50%;
+    top: 22%;
+    left: 35%;
     font-size: 23px;
     animation: rightIn 1.5s linear 0s;
 }
 #happyClick span p{
-    font-size: 18px;
-    margin-top: 5px;
+    /* font-size: 18px; */
+    margin-top: 2px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    color: #75706f;
 }
 
 #angryDrop{
@@ -591,14 +596,18 @@ video{
 }
 #angryClick span{
     position: absolute;
-    top: 27%;
-    right: 50%;
+    top: 22%;
+    left: 35%;
     font-size: 23px;
     animation: rightIn 1.5s linear 0s;
 }
 #angryClick span p{
-    font-size: 18px;
-    margin-top: 5px;
+    margin-top: 2px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    color: #75706f;
 }
 
 #sadDrop{
@@ -610,14 +619,18 @@ video{
 }
 #sadClick span{
     position: absolute;
-    top: 27%;
-    right: 50%;
+    top: 22%;
+    left: 35%;
     font-size: 23px;
     animation: rightIn 1.5s linear 0s;
 }
 #sadClick span p{
-    font-size: 18px;
-    margin-top: 5px;
+    margin-top: 2px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    color: #75706f;
 }
 
 #fearDrop{
@@ -629,14 +642,18 @@ video{
 }
 #fearClick span{
     position: absolute;
-    top: 27%;
-    right: 50%;
+    top: 22%;
+    left: 35%;
     font-size: 23px;
     animation: rightIn 1.5s linear 0s;
 }
 #fearClick span p{
-    font-size: 18px;
-    margin-top: 5px;
+    margin-top: 2px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    color: #75706f;
 }
 
 /* 墨球 */  
