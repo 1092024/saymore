@@ -59,6 +59,12 @@ function backClick(){
 }
 
 function speed(circle){
+    $('.conTxt').css({
+        'opacity' : '0'
+    })
+    $('#conBG').css({
+        'opacity' : '0'
+    })
     $("#happy").css({
         'transform': 'translate(0, 1000px)',
         'transition': 'transform 2.8s ease-in-out'

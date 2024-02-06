@@ -509,16 +509,37 @@ video{
 /* contents */
 .conMain{
     height: 90vh;
-    background-color: rgb(250, 249, 244);
+    /* background-image: url('./img/inkballBG.png');
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; */
+    background-color: #ece4da;
     /* display: flex;
     align-items: center;
     margin: 0 auto; */
     position: relative;
     overflow: hidden;
     font-family: 'Noto Serif TC', serif;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    width: 100%;
 }
 .conMain img{
     margin: 0 auto;
+}
+#conBG{
+    position: absolute;
+}
+.conTxt{
+    /* position: absolute;
+    top: 38%;
+    left: 30%; */
+    text-align: center;
+    font-size: 13px;
+    color: #1d1d1d;
+    opacity: 0.8;
+    line-height: 30px;
 }
 #happy:hover{
     cursor: pointer;
@@ -668,28 +689,28 @@ video{
 #happy{
     width: 18%;
     position: absolute;
-    top: 10%;
-	left: 37%;
+    top: 5%;
+	left: 40%;
     animation: flash 1s infinite alternate;
 }
 #angry{
     width: 18%;
     position: absolute;
-    top: 40%;
-	left: 15%;
+    top: 48%;
+	left: 10%;
     animation: flash 1.5s infinite alternate;
 }
 #sad{
     width: 18%;
     position: absolute;
-    top: 36%;
-	left: 74%;
+    top: 28%;
+	left: 70%;
     animation: flash 0.8s infinite alternate;
 }
 #fear{
     width: 18%;
     position: absolute;
-    top: 58%;
+    top: 65%;
 	left: 49%;
     animation: flash 1.3s infinite alternate;
 }
