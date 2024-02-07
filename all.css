@@ -110,7 +110,7 @@
     }
     /* contents */
     .conMain{
-        height: 90vh;
+        height: 130vh;
         /* background-image: url('./img/inkballBG.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -164,10 +164,10 @@
         position: relative;
     }
     .back{
-        width: 2vw;
+        width: 6vw;
         position: absolute;
         top: 3%;
-        left: 2%;
+        left: 6%;
     }
     .back:hover{
         cursor: pointer;
@@ -190,93 +190,93 @@
         }
     }
     #happyDrop{
-        width: 20vw;
+        width: 32vw;
         position: absolute;
         top: 28%;
-        left: 10%;
+        left: 2%;
         animation: fade 2s linear 0s;
     }
     #happyClick span{
         position: absolute;
-        top: 22%;
+        top: 12%;
         left: 35%;
-        font-size: 23px;
+        font-size: 18px;
         animation: rightIn 1.5s linear 0s;
     }
     #happyClick span p{
         /* font-size: 18px; */
         margin-top: 2px;
         padding-right: 20px;
-        font-size: 20px;
+        font-size: 10px;
         line-height: 30px;
         letter-spacing: 1.1px;
         color: #75706f;
     }
 
     #angryDrop{
-        width: 20vw;
+        width: 32vw;
         position: absolute;
         top: 28%;
-        left: 10%;
+        left: 2%;
         animation: fade 2s linear 0s;
     }
     #angryClick span{
         position: absolute;
-        top: 22%;
+        top: 12%;
         left: 35%;
-        font-size: 23px;
+        font-size: 18px;
         animation: rightIn 1.5s linear 0s;
     }
     #angryClick span p{
         margin-top: 2px;
         padding-right: 20px;
-        font-size: 20px;
+        font-size: 10px;
         line-height: 30px;
         letter-spacing: 1.1px;
         color: #75706f;
     }
 
     #sadDrop{
-        width: 20vw;
+        width: 32vw;
         position: absolute;
         top: 28%;
-        left: 10%;
+        left: 2%;
         animation: fade 2s linear 0s;
     }
     #sadClick span{
         position: absolute;
-        top: 22%;
+        top: 12%;
         left: 35%;
-        font-size: 23px;
+        font-size: 18px;
         animation: rightIn 1.5s linear 0s;
     }
     #sadClick span p{
         margin-top: 2px;
         padding-right: 20px;
-        font-size: 20px;
+        font-size: 10px;
         line-height: 30px;
         letter-spacing: 1.1px;
         color: #75706f;
     }
 
     #fearDrop{
-        width: 20vw;
+        width: 32vw;
         position: absolute;
         top: 28%;
-        left: 10%;
+        left: 2%;
         animation: fade 2s linear 0s;
     }
     #fearClick span{
         position: absolute;
-        top: 22%;
+        top: 12%;
         left: 35%;
-        font-size: 23px;
+        font-size: 18px;
         animation: rightIn 1.5s linear 0s;
     }
     #fearClick span p{
         margin-top: 2px;
         padding-right: 20px;
-        font-size: 20px;
+        font-size: 10px;
         line-height: 30px;
         letter-spacing: 1.1px;
         color: #75706f;
