@@ -685,6 +685,7 @@
     }
     #conBG{
         position: absolute;
+        width: 100%;
     }
     .conTxt{
         /* position: absolute;
