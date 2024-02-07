@@ -59,6 +59,9 @@ $("#endBtn").on("click", function(){
   $(".dropImg").css({
     'display': 'none',
   })
+  $("#sayEng").css({
+    'display': 'none',
+  })
 
   $("#loadingMessage").css({
     'display': 'block',

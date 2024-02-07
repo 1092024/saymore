@@ -3,8 +3,11 @@
     transition: opacity 1s ease-in-out;
     font-family: 'Noto Serif TC', serif;
   }
-
+/* mobile */
 @media (max-width: 767px) {
+    .container01{
+        background-color: #f0f0f0;
+    }
     html{
         width: 100%;
         height: 100%;
@@ -81,13 +84,501 @@
         width: 30px;
         margin: 15px;
     }
+    #main{
+        height: 90vh;
+        align-items: center; 
+    }
+    #main img{
+        width: 100vw;
+    }
+    #introduction{
+        height: 100%;
+        margin: auto;
+        width: 90vw;
+        padding: 16px;
+        font-size: 20px;
+    }
+    #index_introduction{
+        font-size: 12px;
+        line-height: 35px;
+        letter-spacing: 1.2px;
+        color: #75706f;
+    }
+    #footer{
+        height: 20vh;
+        text-align: center;
+    }
+    /* contents */
+    .conMain{
+        height: 90vh;
+        /* background-image: url('./img/inkballBG.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+        /* background-color: #ece4da; */
+        background-color: #f0f0f0;
+        /* display: flex;
+        align-items: center;
+        margin: 0 auto; */
+        position: relative;
+        overflow: hidden;
+        font-family: 'Noto Serif TC', serif;
+        display: flex;
+        justify-content: center; /* 水平置中 */
+        align-items: center; /* 垂直置中 */
+        width: 100%;
+    }
+    .conMain img{
+        margin: 0 auto;
+    }
+    #conBG{
+        position: absolute;
+        top: 10%;
+        width: 100vw;
+    }
+    .conTxt{
+        /* position: absolute;
+        top: 38%;
+        left: 30%; */
+        text-align: center;
+        font-size: 10px;
+        color: #1d1d1d;
+        opacity: 0.8;
+        line-height: 20px;
+    }
+    #happy:hover{
+        cursor: pointer;
+    }
+    #angry:hover{
+        cursor: pointer;
+    }
+    #sad:hover{
+        cursor: pointer;
+    }
+    #fear:hover{
+        cursor: pointer;
+    }  
+
+    #happyClick, #angryClick, #sadClick, #fearClick{
+        display: none;
+        position: relative;
+    }
+    .back{
+        width: 2vw;
+        position: absolute;
+        top: 3%;
+        left: 2%;
+    }
+    .back:hover{
+        cursor: pointer;
+    }
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes rightIn {
+        from {
+            transform: translate3d(50%, 0, 0);
+        }
+
+        to {
+            transform: none;
+        }
+    }
+    #happyDrop{
+        width: 20vw;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        animation: fade 2s linear 0s;
+    }
+    #happyClick span{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        font-size: 23px;
+        animation: rightIn 1.5s linear 0s;
+    }
+    #happyClick span p{
+        /* font-size: 18px; */
+        margin-top: 2px;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1.1px;
+        color: #75706f;
+    }
+
+    #angryDrop{
+        width: 20vw;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        animation: fade 2s linear 0s;
+    }
+    #angryClick span{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        font-size: 23px;
+        animation: rightIn 1.5s linear 0s;
+    }
+    #angryClick span p{
+        margin-top: 2px;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1.1px;
+        color: #75706f;
+    }
+
+    #sadDrop{
+        width: 20vw;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        animation: fade 2s linear 0s;
+    }
+    #sadClick span{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        font-size: 23px;
+        animation: rightIn 1.5s linear 0s;
+    }
+    #sadClick span p{
+        margin-top: 2px;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1.1px;
+        color: #75706f;
+    }
+
+    #fearDrop{
+        width: 20vw;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        animation: fade 2s linear 0s;
+    }
+    #fearClick span{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        font-size: 23px;
+        animation: rightIn 1.5s linear 0s;
+    }
+    #fearClick span p{
+        margin-top: 2px;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1.1px;
+        color: #75706f;
+    }
+
+    /* 墨球 */  
+    @keyframes flash {
+        0% {
+        opacity: 1;
+        }
+        100% {
+        opacity: 0.5;
+        }
+    }
+    #happy{
+        width: 18%;
+        position: absolute;
+        top: 9%;
+        left: 41%;
+        animation: flash 1s infinite alternate;
+    }
+    #angry{
+        width: 18%;
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        animation: flash 1.5s infinite alternate;
+    }
+    #sad{
+        width: 18%;
+        position: absolute;
+        top: 15%;
+        left: 70%;
+        animation: flash 0.8s infinite alternate;
+    }
+    #fear{
+        width: 18%;
+        position: absolute;
+        top: 25%;
+        left: 49%;
+        animation: flash 1.3s infinite alternate;
+    }
+    /* experience */
+    .expMain{
+        /* margin: auto; */
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        /* background-image: url('./img/bg.gif'); */
+        background-image: linear-gradient(45deg, #808080 0%, #1d1d1d 100%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .container {
+        height:100vh;
+        width:100vw;
+        position: relative;
+        overflow: hidden;
+        /* background-image: radial-gradient(rgba(0,0,0,.95),rgba(0,0,0,.85),rgba(0,0,0,.7)), url(https://svgsilh.com/svg/1301778.svg); */
+        z-index: 2;
+        /* background-color: #5a5a5a; */
+        /* text-align: center; */
+    }
+    .doorImg{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 6.0s ease;
+    }
+    .dropImg{
+        position: absolute;
+        top: 15%;
+        left: 44%;
+        height: 29vh;
+        opacity: 0;
+        transition: opacity 6.0s ease;
+    }
+    .dropImg:hover{
+        cursor: pointer;
+    }
+
+    .door-left, .door-right {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0%;
+        transition: all ease 2.0s;
+        -moz-transition: all ease 2.0s;
+        -webkit-transition: all ease 2.0s;
+        -o-transition: all ease 2.0s;
+        -ms-transition: all ease 2.0;
+    }
+    .door-left {
+        left: 0%;
+        background-image: url('./img/door_left.png');
+    }
+    .door-right {
+        left: 50%;
+        /* background-color: rgb(166, 166, 166); */
+        background-image: url('./img/door_left.png');
+    }
+    .door-left.click{
+        left: -50%;
+
+    }
+    .door-right.click{
+        left: 100%;
+    }
+    .clickTextDoor{
+        position: absolute;
+        top: 50%;
+        z-index: 99;
+        left: 42%;
+        padding: 10px;
+        animation: neonGlow 1s infinite alternate;
+        font-size: 30px;
+    }
+    .clickTextDoor:hover{
+        cursor: pointer;
+    }
+    .goBack{
+        position: absolute;
+        z-index: 98;
+        top: 2%;
+        left: 1.5%;
+        width: 7%;
+        /* color: #9c9b9b; */
+        text-decoration: none;
+    }
+    /* .goBack:hover{
+        color: #747474;
+        text-decoration: none;
+    } */
+    .recordBtn{
+        position: absolute;
+        display: none;
+        top: 75%;
+        z-index: 4;
+        left: 30%;
+        /* font-size: 50px; */
+    }
+    #startBtn{
+        color: #9c9b9b;
+        text-decoration: dashed;
+        font-size: 30px;
+        padding: 20px 10px 20px 10px;
+        animation: recordText 1s infinite alternate;
+    }
+    #startBtn:hover{
+        background-image: linear-gradient(to right, #d7d2cc 0%, #808c96 100%);
+        color: aliceblue;
+        border-radius: 50%;
+        animation: none;
+        cursor: pointer;
+    }
+    #sayEng{
+        color: #fffcfc;
+        background-color: #606060;
+        padding: 3px;
+    }
+    #recordGIF{
+        height: 15vh;
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        left: 17%;
+    }
+    #endBtn{
+        color: #9c9b9b;
+        text-decoration: dashed;
+        font-size: 30px;
+        padding: 20px 35px 20px 35px;
+        animation: recordText 1s infinite alternate;
+        display: none;
+    }
+    #endBtn:hover{
+        background-image: linear-gradient(to right, #d7d2cc 0%, #808c96 100%);
+        color: aliceblue;
+        border-radius: 50%;
+        animation: none;
+        cursor: pointer;
+    }
+    @keyframes neonGlow {
+        0% {
+        text-shadow: 0 0 10px #5a5a5a;
+        color: rgba(230, 230, 230, 0.4);
+        }
+        100% {
+        text-shadow: 0 0 20px #5a5a5a, 0 0 30px #5a5a5a, 0 0 40px #5a5a5a;
+        color: rgb(230, 230, 230, 0.8);
+        }
+    }
+    @keyframes recordText {
+        0% {
+        text-shadow: 0 0 20px #cdcccc;
+        color: rgba(251, 251, 251, 0.8);
+        }
+        100% {
+        text-shadow: 0 0 25px #a7a7a7, 0 0 30px #717171, 0 0 40px #737373;
+        color: rgba(251, 251, 251, 0.8);
+        }
+    }
+    @keyframes videoText {
+        0% {
+        text-shadow: 0 0 20px #303030;
+        color: rgb(118, 116, 116);
+        }
+        100% {
+        text-shadow: 0 0 10px #4e4d4d, 0 0 20px #272727, 0 0 30px #101010;
+        color: rgba(234, 234, 234, 0.8);
+        }
+    }
+
+    video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* 調整影片寬度，這裡是佔據畫面寬度的 80% */
+        height: auto; /* 讓高度按比例自動調整 */
+        display: none;
+        z-index: 10;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0); /* 初始完全透明 */
+        z-index: 12; /* 將遮罩堆疊在影片上方 */
+        display: none; /* 初始隱藏 */
+        transition: background 1s ease; /* 背景淡入效果，1秒的動畫時間 */
+    }
+
+    .overlay-buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 13; /* 將按鈕堆疊在遮罩上方 */
+        text-align: center;
+        display: none; /* 初始隱藏 */
+        transition: opacity 1s ease; /* 按鈕淡入效果，1秒的動畫時間 */
+    }
+
+    .overlay-buttons button {
+        padding: 10px 30px;
+        margin: 40px;
+        font-size: 24px;
+        /* background-color: #fff; */
+        border: none;
+        cursor: pointer;
+
+        border: 0;
+        border-radius: 50%;
+        background-color: transparent;
+        color: #fff;
+        animation: videoText 1s infinite alternate;
+    }
+
+    .loading-message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        display: none; /* 初始隐藏 */
+        transition: opacity 0.5s ease; /* 添加淡入淡出效果，0.5秒的动画时间 */
+    }
+
+
+
+  /* 軌跡 */
+  /* .orbit-1{
+	width: 61%;
+	height: 45%;
+	border-radius: 50%;
+	border: 2px solid gray;
+	position: absolute;
+	left: 18%;
+	top: 32%;
+  } */
+
+
+
 }
 
+/* PC */
 @media (min-width: 768px) {
+    .navbar01{
+        background-color: #f0f0f0;
+    }
     .container01 {
         display: flex;
         flex-direction: column;
-        
+        background-color: #f0f0f0;
     }
     #navbar{
         height: 10vh;
@@ -162,6 +653,471 @@
     #computerNav{
         overflow: visible;
     }
+    #index_introduction{
+        font-size: 20px;
+        line-height: 50px;
+        letter-spacing: 1.2px;
+        color: #75706f;
+    }
+
+    /* contents */
+    .conMain{
+        height: 90vh;
+        /* background-image: url('./img/inkballBG.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+        /* background-color: #ece4da; */
+        background-color: #f0f0f0;
+        /* display: flex;
+        align-items: center;
+        margin: 0 auto; */
+        position: relative;
+        overflow: hidden;
+        font-family: 'Noto Serif TC', serif;
+        display: flex;
+        justify-content: center; /* 水平置中 */
+        align-items: center; /* 垂直置中 */
+        width: 100%;
+    }
+    .conMain img{
+        margin: 0 auto;
+    }
+    #conBG{
+        position: absolute;
+    }
+    .conTxt{
+        /* position: absolute;
+        top: 38%;
+        left: 30%; */
+        text-align: center;
+        font-size: 13px;
+        color: #1d1d1d;
+        opacity: 0.8;
+        line-height: 30px;
+    }
+    #happy:hover{
+        cursor: pointer;
+    }
+    #angry:hover{
+        cursor: pointer;
+    }
+    #sad:hover{
+        cursor: pointer;
+    }
+    #fear:hover{
+        cursor: pointer;
+    }  
+
+    #happyClick, #angryClick, #sadClick, #fearClick{
+        display: none;
+        position: relative;
+    }
+    .back{
+        width: 2vw;
+        position: absolute;
+        top: 3%;
+        left: 2%;
+    }
+    .back:hover{
+        cursor: pointer;
+    }
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes rightIn {
+        from {
+            transform: translate3d(50%, 0, 0);
+        }
+
+        to {
+            transform: none;
+        }
+    }
+    #happyDrop{
+        width: 20vw;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        animation: fade 2s linear 0s;
+    }
+    #happyClick span{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        font-size: 23px;
+        animation: rightIn 1.5s linear 0s;
+    }
+    #happyClick span p{
+        /* font-size: 18px; */
+        margin-top: 2px;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1.1px;
+        color: #75706f;
+    }
+
+    #angryDrop{
+        width: 20vw;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        animation: fade 2s linear 0s;
+    }
+    #angryClick span{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        font-size: 23px;
+        animation: rightIn 1.5s linear 0s;
+    }
+    #angryClick span p{
+        margin-top: 2px;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1.1px;
+        color: #75706f;
+    }
+
+    #sadDrop{
+        width: 20vw;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        animation: fade 2s linear 0s;
+    }
+    #sadClick span{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        font-size: 23px;
+        animation: rightIn 1.5s linear 0s;
+    }
+    #sadClick span p{
+        margin-top: 2px;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1.1px;
+        color: #75706f;
+    }
+
+    #fearDrop{
+        width: 20vw;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        animation: fade 2s linear 0s;
+    }
+    #fearClick span{
+        position: absolute;
+        top: 22%;
+        left: 35%;
+        font-size: 23px;
+        animation: rightIn 1.5s linear 0s;
+    }
+    #fearClick span p{
+        margin-top: 2px;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1.1px;
+        color: #75706f;
+    }
+
+    /* 墨球 */  
+    @keyframes flash {
+        0% {
+        opacity: 1;
+        }
+        100% {
+        opacity: 0.5;
+        }
+    }
+    #happy{
+        width: 18%;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        animation: flash 1s infinite alternate;
+    }
+    #angry{
+        width: 18%;
+        position: absolute;
+        top: 48%;
+        left: 10%;
+        animation: flash 1.5s infinite alternate;
+    }
+    #sad{
+        width: 18%;
+        position: absolute;
+        top: 28%;
+        left: 70%;
+        animation: flash 0.8s infinite alternate;
+    }
+    #fear{
+        width: 18%;
+        position: absolute;
+        top: 65%;
+        left: 49%;
+        animation: flash 1.3s infinite alternate;
+    }
+
+    /* experience */
+    .expMain{
+        /* margin: auto; */
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        /* background-image: url('./img/bg.gif'); */
+        background-image: linear-gradient(45deg, #808080 0%, #1d1d1d 100%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .container {
+        height:100vh;
+        width:100vw;
+        position: relative;
+        overflow: hidden;
+        /* background-image: radial-gradient(rgba(0,0,0,.95),rgba(0,0,0,.85),rgba(0,0,0,.7)), url(https://svgsilh.com/svg/1301778.svg); */
+        z-index: 2;
+        /* background-color: #5a5a5a; */
+        /* text-align: center; */
+    }
+    .doorImg{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 6.0s ease;
+    }
+    .dropImg{
+        position: absolute;
+        top: 13%;
+        left: 49.3%;
+        height: 29vh;
+        opacity: 0;
+        transition: opacity 6.0s ease;
+    }
+    .dropImg:hover{
+        cursor: pointer;
+    }
+
+    .door-left, .door-right {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0%;
+        transition: all ease 2.0s;
+        -moz-transition: all ease 2.0s;
+        -webkit-transition: all ease 2.0s;
+        -o-transition: all ease 2.0s;
+        -ms-transition: all ease 2.0;
+    }
+    .door-left {
+        left: 0%;
+        background-image: url('./img/door_left.png');
+    }
+    .door-right {
+        left: 50%;
+        /* background-color: rgb(166, 166, 166); */
+        background-image: url('./img/door_left.png');
+    }
+    .door-left.click{
+        left: -50%;
+
+    }
+    .door-right.click{
+        left: 100%;
+    }
+    .clickTextDoor{
+        position: absolute;
+        top: 50%;
+        z-index: 99;
+        left: 47.4%;
+        padding: 10px;
+        animation: neonGlow 1s infinite alternate;
+        font-size: 30px;
+    }
+    .clickTextDoor:hover{
+        cursor: pointer;
+    }
+    .goBack{
+        position: absolute;
+        z-index: 98;
+        top: 2%;
+        left: 1.5%;
+        width: 2.3%;
+        /* color: #9c9b9b; */
+        text-decoration: none;
+    }
+    /* .goBack:hover{
+        color: #747474;
+        text-decoration: none;
+    } */
+    .recordBtn{
+        position: absolute;
+        display: none;
+        top: 75%;
+        z-index: 4;
+        left: 44.5%;
+        /* font-size: 50px; */
+    }
+    #startBtn{
+        color: #9c9b9b;
+        text-decoration: dashed;
+        font-size: 30px;
+        padding: 20px 10px 20px 10px;
+        animation: recordText 1s infinite alternate;
+    }
+    #startBtn:hover{
+        background-image: linear-gradient(to right, #d7d2cc 0%, #808c96 100%);
+        color: aliceblue;
+        border-radius: 50%;
+        animation: none;
+        cursor: pointer;
+    }
+    #sayEng{
+        color: #fffcfc;
+        background-color: #606060;
+        padding: 3px;
+    }
+    #recordGIF{
+        height: 15vh;
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        left: 17%;
+    }
+    #endBtn{
+        color: #9c9b9b;
+        text-decoration: dashed;
+        font-size: 30px;
+        padding: 20px 35px 20px 35px;
+        animation: recordText 1s infinite alternate;
+        display: none;
+    }
+    #endBtn:hover{
+        background-image: linear-gradient(to right, #d7d2cc 0%, #808c96 100%);
+        color: aliceblue;
+        border-radius: 50%;
+        animation: none;
+        cursor: pointer;
+    }
+    @keyframes neonGlow {
+        0% {
+        text-shadow: 0 0 10px #5a5a5a;
+        color: rgba(230, 230, 230, 0.4);
+        }
+        100% {
+        text-shadow: 0 0 20px #5a5a5a, 0 0 30px #5a5a5a, 0 0 40px #5a5a5a;
+        color: rgb(230, 230, 230, 0.8);
+        }
+    }
+    @keyframes recordText {
+        0% {
+        text-shadow: 0 0 20px #cdcccc;
+        color: rgba(251, 251, 251, 0.8);
+        }
+        100% {
+        text-shadow: 0 0 25px #a7a7a7, 0 0 30px #717171, 0 0 40px #737373;
+        color: rgba(251, 251, 251, 0.8);
+        }
+    }
+    @keyframes videoText {
+        0% {
+        text-shadow: 0 0 20px #303030;
+        color: rgb(118, 116, 116);
+        }
+        100% {
+        text-shadow: 0 0 10px #4e4d4d, 0 0 20px #272727, 0 0 30px #101010;
+        color: rgba(234, 234, 234, 0.8);
+        }
+    }
+
+    video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* 調整影片寬度，這裡是佔據畫面寬度的 80% */
+        height: auto; /* 讓高度按比例自動調整 */
+        display: none;
+        z-index: 10;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0); /* 初始完全透明 */
+        z-index: 12; /* 將遮罩堆疊在影片上方 */
+        display: none; /* 初始隱藏 */
+        transition: background 1s ease; /* 背景淡入效果，1秒的動畫時間 */
+    }
+
+    .overlay-buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 13; /* 將按鈕堆疊在遮罩上方 */
+        text-align: center;
+        display: none; /* 初始隱藏 */
+        transition: opacity 1s ease; /* 按鈕淡入效果，1秒的動畫時間 */
+    }
+
+    .overlay-buttons button {
+        padding: 10px 30px;
+        margin: 40px;
+        font-size: 24px;
+        /* background-color: #fff; */
+        border: none;
+        cursor: pointer;
+
+        border: 0;
+        border-radius: 50%;
+        background-color: transparent;
+        color: #fff;
+        animation: videoText 1s infinite alternate;
+    }
+
+    .loading-message {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        display: none; /* 初始隐藏 */
+        transition: opacity 0.5s ease; /* 添加淡入淡出效果，0.5秒的动画时间 */
+    }
+
+
+
+  /* 軌跡 */
+  /* .orbit-1{
+	width: 61%;
+	height: 45%;
+	border-radius: 50%;
+	border: 2px solid gray;
+	position: absolute;
+	left: 18%;
+	top: 32%;
+  } */
+
+
 
     /* works */
     /* .worksMain{
@@ -256,21 +1212,17 @@
     margin: auto;
     display: block;
 } */
-#index_introduction{
-    font-size: 20px;
-    line-height: 50px;
-    letter-spacing: 1.2px;
-    color: #75706f;
-}
+
 
 footer{
     height: 8vh;
-    width: 80vw;
+    width: 100vw;
     padding: auto;
     margin: auto;
     display: flex;
     text-align: center;
     font-family: 'Noto Serif TC', serif;
+    background-color: #f0f0f0;
 }
 footer img{
     display: inline-block;
@@ -278,451 +1230,4 @@ footer img{
     margin: 15px;
 }
 
-
-/* experience */
-.expMain{
-    /* margin: auto; */
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-    /* background-image: url('./img/bg.gif'); */
-    background-image: linear-gradient(45deg, #808080 0%, #1d1d1d 100%);
-    background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-    font-family: 'Noto Serif TC', serif;
-}
-.container {
-    height:100vh;
-    width:100vw;
-    position: relative;
-    overflow: hidden;
-    /* background-image: radial-gradient(rgba(0,0,0,.95),rgba(0,0,0,.85),rgba(0,0,0,.7)), url(https://svgsilh.com/svg/1301778.svg); */
-    z-index: 2;
-    /* background-color: #5a5a5a; */
-    /* text-align: center; */
-}
-.doorImg{
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 6.0s ease;
-}
-.dropImg{
-    position: absolute;
-    top: 13%;
-    left: 48%;
-    height: 29vh;
-    opacity: 0;
-    transition: opacity 6.0s ease;
-}
-.dropImg:hover{
-    cursor: pointer;
-}
-
-.door-left, .door-right {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    top: 0%;
-    transition: all ease 2.0s;
-    -moz-transition: all ease 2.0s;
-    -webkit-transition: all ease 2.0s;
-    -o-transition: all ease 2.0s;
-    -ms-transition: all ease 2.0;
-}
-.door-left {
-    left: 0%;
-    background-image: url('./img/door_left.png');
-}
-.door-right {
-    left: 50%;
-    /* background-color: rgb(166, 166, 166); */
-    background-image: url('./img/door_left.png');
-}
-.door-left.click{
-    left: -50%;
-
-}
-.door-right.click{
-    left: 100%;
-}
-.clickTextDoor{
-    position: absolute;
-    top: 50%;
-    z-index: 99;
-    left: 48%;
-    padding: 10px;
-    animation: neonGlow 1s infinite alternate;
-}
-.clickTextDoor:hover{
-    cursor: pointer;
-}
-.goBack{
-    position: absolute;
-    z-index: 98;
-    top: 1%;
-    left: 1%;
-    color: #9c9b9b;
-    text-decoration: none;
-}
-.goBack:hover{
-    color: #5a5a5a;
-    text-decoration: none;
-}
-.recordBtn{
-    position: absolute;
-    display: none;
-    top: 75%;
-    z-index: 4;
-    left: 46.5%;
-    font-size: 25px;
-}
-#startBtn{
-    color: #9c9b9b;
-    text-decoration: dashed;
-    font-size: 20px;
-    padding: 20px 10px 20px 10px;
-    animation: recordText 1s infinite alternate;
-}
-#startBtn:hover{
-    background-image: linear-gradient(to right, #d7d2cc 0%, #808c96 100%);
-    color: aliceblue;
-    border-radius: 50%;
-    animation: none;
-    cursor: pointer;
-}
-#recordGIF{
-    height: 15vh;
-    display: none;
-    position: absolute;
-    bottom: 80%;
-    left: 6%;
-}
-#endBtn{
-    color: #9c9b9b;
-    text-decoration: dashed;
-    font-size: 20px;
-    padding: 20px 10px 20px 10px;
-    animation: recordText 1s infinite alternate;
-    display: none;
-}
-#endBtn:hover{
-    background-image: linear-gradient(to right, #d7d2cc 0%, #808c96 100%);
-    color: aliceblue;
-    border-radius: 50%;
-    animation: none;
-    cursor: pointer;
-}
-@keyframes neonGlow {
-    0% {
-      text-shadow: 0 0 10px #5a5a5a;
-      color: rgba(230, 230, 230, 0.4);
-    }
-    100% {
-      text-shadow: 0 0 20px #5a5a5a, 0 0 30px #5a5a5a, 0 0 40px #5a5a5a;
-      color: rgb(230, 230, 230, 0.8);
-    }
-  }
-  @keyframes recordText {
-    0% {
-      text-shadow: 0 0 20px #cdcccc;
-      color: rgba(251, 251, 251, 0.8);
-    }
-    100% {
-      text-shadow: 0 0 25px #a7a7a7, 0 0 30px #717171, 0 0 40px #737373;
-      color: rgba(251, 251, 251, 0.8);
-    }
-  }
-  @keyframes videoText {
-    0% {
-      text-shadow: 0 0 20px #303030;
-      color: rgb(118, 116, 116);
-    }
-    100% {
-      text-shadow: 0 0 10px #4e4d4d, 0 0 20px #272727, 0 0 30px #101010;
-      color: rgba(234, 234, 234, 0.8);
-    }
-  }
-
-video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%; /* 調整影片寬度，這裡是佔據畫面寬度的 80% */
-    height: auto; /* 讓高度按比例自動調整 */
-    display: none;
-    z-index: 10;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0); /* 初始完全透明 */
-    z-index: 12; /* 將遮罩堆疊在影片上方 */
-    display: none; /* 初始隱藏 */
-    transition: background 1s ease; /* 背景淡入效果，1秒的動畫時間 */
-}
-
-.overlay-buttons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 13; /* 將按鈕堆疊在遮罩上方 */
-    text-align: center;
-    display: none; /* 初始隱藏 */
-    transition: opacity 1s ease; /* 按鈕淡入效果，1秒的動畫時間 */
-}
-
-.overlay-buttons button {
-    padding: 10px 30px;
-    margin: 40px;
-    font-size: 24px;
-    /* background-color: #fff; */
-    border: none;
-    cursor: pointer;
-
-    border: 0;
-    border-radius: 50%;
-    background-color: transparent;
-    color: #fff;
-    animation: videoText 1s infinite alternate;
-}
-
-.loading-message {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    display: none; /* 初始隐藏 */
-    transition: opacity 0.5s ease; /* 添加淡入淡出效果，0.5秒的动画时间 */
-}
-
-/* contents */
-.conMain{
-    height: 90vh;
-    /* background-image: url('./img/inkballBG.png');
-    background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover; */
-    background-color: #ece4da;
-    /* display: flex;
-    align-items: center;
-    margin: 0 auto; */
-    position: relative;
-    overflow: hidden;
-    font-family: 'Noto Serif TC', serif;
-    display: flex;
-    justify-content: center; /* 水平置中 */
-    align-items: center; /* 垂直置中 */
-    width: 100%;
-}
-.conMain img{
-    margin: 0 auto;
-}
-#conBG{
-    position: absolute;
-}
-.conTxt{
-    /* position: absolute;
-    top: 38%;
-    left: 30%; */
-    text-align: center;
-    font-size: 13px;
-    color: #1d1d1d;
-    opacity: 0.8;
-    line-height: 30px;
-}
-#happy:hover{
-    cursor: pointer;
-}
-#angry:hover{
-    cursor: pointer;
-}
-#sad:hover{
-    cursor: pointer;
-}
-#fear:hover{
-    cursor: pointer;
-}  
-
-#happyClick, #angryClick, #sadClick, #fearClick{
-    display: none;
-    position: relative;
-}
-.back{
-    width: 2vw;
-    position: absolute;
-    top: 3%;
-    left: 2%;
-}
-.back:hover{
-    cursor: pointer;
-}
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes rightIn {
-    from {
-        transform: translate3d(50%, 0, 0);
-    }
-
-    to {
-        transform: none;
-    }
-}
-#happyDrop{
-    width: 20vw;
-    position: absolute;
-    top: 28%;
-    left: 10%;
-    animation: fade 2s linear 0s;
-}
-#happyClick span{
-    position: absolute;
-    top: 22%;
-    left: 35%;
-    font-size: 23px;
-    animation: rightIn 1.5s linear 0s;
-}
-#happyClick span p{
-    /* font-size: 18px; */
-    margin-top: 2px;
-    padding-right: 20px;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 1.1px;
-    color: #75706f;
-}
-
-#angryDrop{
-    width: 20vw;
-    position: absolute;
-    top: 28%;
-    left: 10%;
-    animation: fade 2s linear 0s;
-}
-#angryClick span{
-    position: absolute;
-    top: 22%;
-    left: 35%;
-    font-size: 23px;
-    animation: rightIn 1.5s linear 0s;
-}
-#angryClick span p{
-    margin-top: 2px;
-    padding-right: 20px;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 1.1px;
-    color: #75706f;
-}
-
-#sadDrop{
-    width: 20vw;
-    position: absolute;
-    top: 28%;
-    left: 10%;
-    animation: fade 2s linear 0s;
-}
-#sadClick span{
-    position: absolute;
-    top: 22%;
-    left: 35%;
-    font-size: 23px;
-    animation: rightIn 1.5s linear 0s;
-}
-#sadClick span p{
-    margin-top: 2px;
-    padding-right: 20px;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 1.1px;
-    color: #75706f;
-}
-
-#fearDrop{
-    width: 20vw;
-    position: absolute;
-    top: 28%;
-    left: 10%;
-    animation: fade 2s linear 0s;
-}
-#fearClick span{
-    position: absolute;
-    top: 22%;
-    left: 35%;
-    font-size: 23px;
-    animation: rightIn 1.5s linear 0s;
-}
-#fearClick span p{
-    margin-top: 2px;
-    padding-right: 20px;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 1.1px;
-    color: #75706f;
-}
-
-/* 墨球 */  
-@keyframes flash {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.5;
-    }
-}
-#happy{
-    width: 18%;
-    position: absolute;
-    top: 5%;
-	left: 40%;
-    animation: flash 1s infinite alternate;
-}
-#angry{
-    width: 18%;
-    position: absolute;
-    top: 48%;
-	left: 10%;
-    animation: flash 1.5s infinite alternate;
-}
-#sad{
-    width: 18%;
-    position: absolute;
-    top: 28%;
-	left: 70%;
-    animation: flash 0.8s infinite alternate;
-}
-#fear{
-    width: 18%;
-    position: absolute;
-    top: 65%;
-	left: 49%;
-    animation: flash 1.3s infinite alternate;
-}
-
-  /* 軌跡 */
-  /* .orbit-1{
-	width: 61%;
-	height: 45%;
-	border-radius: 50%;
-	border: 2px solid gray;
-	position: absolute;
-	left: 18%;
-	top: 32%;
-  } */
 
