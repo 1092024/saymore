@@ -5,6 +5,12 @@
   }
 /* mobile */
 @media (max-width: 767px) {
+    #mainSeePC{
+       display: none;
+    }
+    #mainSeeMobile{
+        display: block;
+    }
     .container01{
         background-color: #f0f0f0;
     }
@@ -574,6 +580,12 @@
 
 /* PC */
 @media (min-width: 768px) {
+    #mainSeePC{
+        display: block;
+     }
+     #mainSeeMobile{
+         display: none;
+     }
     .navbar01{
         background-color: #f0f0f0;
     }
