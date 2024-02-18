@@ -632,8 +632,9 @@
         align-items: center;
         justify-content: space-between;
         height: 10vh;
-        width: 95vw;
-        padding: auto;
+        width: 100vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
         margin: auto;
         font-family: 'Noto Serif TC', serif;
     }
